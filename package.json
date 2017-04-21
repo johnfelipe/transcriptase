@@ -49,6 +49,7 @@
     "fs-plus": "^3.0.0",
     "quill": "^1.2",
     "quill-delta": "^3.5",
+    "typescript": "^2.2.2",
     "video.js": "^5.19"
   },
   "devDependencies": {
