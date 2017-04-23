@@ -1,3 +1,4 @@
+
 const isMacOS = require('./isMacOS')
 const {dialog, ipcRenderer} = require('electron')
 const {saveFile} = require('./saveTranscript')
