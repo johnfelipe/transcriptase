@@ -1,9 +1,9 @@
-let {app, BrowserWindow} = require('electron')
-const fs = require('fs-plus')
-const ipc = require('electron').ipcMain
-const {saveFile} = require('./saveTranscript')
-const {showUnsavedChangesDialog} = require('./closeTheApp')
-require('./menu/menuTemplate')
+import { app, BrowserWindow } from 'electron'
+import * as fs from 'fs-plus'
+import { ipcMain as ipc } from 'electron'
+import * as saveFile from './saveTranscript'
+import * as showUnsavedChangesDialog from './closeTheApp'
+// require('./menu/menuTemplate')
 
 let mainWindow
 
@@ -48,7 +48,7 @@ app.on('activate', function () {
 })
 
 // File selection
-const showFileSelectionDialog = require('./main-process/showFileSelectionDialog')
+import * as showFileSelectionDialog from './main-process/showFileSelectionDialog'
 ipc.on('open-file-dialog', function (event, roleOfFile) {
   let file = showFileSelectionDialog(event, roleOfFile)
   if (file) {
