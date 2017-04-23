@@ -1,4 +1,4 @@
-const Quill = require('quill')
+import * as Quill from 'quill'
 
 let transcriptEditor = new Quill('.transcript-editor', {
   modules: {
@@ -8,4 +8,4 @@ let transcriptEditor = new Quill('.transcript-editor', {
   placeholder: 'Transcribe away...'
 })
 
-module.exports = transcriptEditor
+export { transcriptEditor }
