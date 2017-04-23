@@ -1,10 +1,9 @@
 {
-    "files": [
-        "src/main.ts"
-    ],
     "compilerOptions": {
         "noImplicitAny": true,
         "target": "es6",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "allowJs": "false",
+        "compileOnSave": true
     }
 }
