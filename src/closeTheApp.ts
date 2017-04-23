@@ -1,9 +1,9 @@
 
 const isMacOS = require('./isMacOS')
-const {dialog, ipcRenderer} = require('electron')
-const {saveFile} = require('./saveTranscript')
+const { dialog, ipcRenderer } = require('electron')
+const { saveFile } = require('./saveTranscript')
 
-module.exports = {
+export {
 
   handleAnyUnsavedChanges (
     isEditorDirty,
