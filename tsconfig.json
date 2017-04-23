@@ -3,7 +3,10 @@
         "noImplicitAny": false,
         "target": "es6",
         "moduleResolution": "node",
-        "allowJs": "false",
-        "compileOnSave": false
+        "allowJs": false,
+        "compileOnSave": false,
+        "types": [
+            "node"
+        ]
     }
 }
