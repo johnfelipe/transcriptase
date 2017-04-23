@@ -1,4 +1,4 @@
-const ipc = require('electron').ipcRenderer
+import { ipcRenderer as ipc} from 'electron'
 
 const registerFileSelectionEvent = function (editorInstance) {
   let transcriptSelectionButton = document.getElementById('select-transcript-file')
@@ -12,4 +12,4 @@ const registerFileSelectionEvent = function (editorInstance) {
   })
 }
 
-module.exports = registerFileSelectionEvent
+export { registerFileSelectionEvent }
