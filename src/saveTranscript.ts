@@ -1,7 +1,8 @@
-const ipc = require('electron').ipcRenderer
-const dialog = require('electron').dialog
-const fs = require('fs-plus')
-const isMacOS = require('./isMacOS')
+import { ipcRenderer as ipc } from 'electron'
+import { dialog } from 'electron'
+import * as fs from 'fs-plus'
+import { isMacOS } from './isMacOS'
+
 const saveOptions = {
   title: 'Save Your Transcript',
   properties: ['createDirectory'],
@@ -10,7 +11,7 @@ const saveOptions = {
   ]
 }
 const Delta = require('quill-delta')
-let isTranscriptEditorDirty = true // eslint-disable-line no-unused-vars
+let isTranscriptEditorDirty: boolean = true //
 
 module.exports = {
 
