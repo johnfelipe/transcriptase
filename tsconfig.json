@@ -4,7 +4,6 @@
         "target": "es6",
         "moduleResolution": "node",
         "allowJs": false,
-        "compileOnSave": false,
         "types": [
             "node"
         ]
